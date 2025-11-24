@@ -1,6 +1,6 @@
 ** This is a practice using docker **
 I created a basic API using Flask and Docker
- I use a python 3.13, Flask, gunicorn and Docker
+ I use python 3.13, Flask, gunicorn and Docker
 
 To build the image in docker:
     docker build -t api-flask .
