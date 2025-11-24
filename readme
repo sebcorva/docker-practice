@@ -1,0 +1,20 @@
+** This is a practice using docker **
+I created a basic API using Flask and Docker
+ I use a python 3.13, Flask, gunicorn and Docker
+
+To build the image in docker:
+    docker build -t api-flask .
+
+To run the container:
+    docker run -d -p 8080:5000 --name api-active api-flask
+
+** I use the port 8080 because the port 5000 was already used **
+
+To see the result check:
+    http://localhost:8080/ and run docker ps to see if the container is active
+
+To stop the container:
+    docker stop api-active
+
+To remove the container
+    docker rm api-active
